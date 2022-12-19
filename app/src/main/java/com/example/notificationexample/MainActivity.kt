@@ -37,7 +37,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         val service = CounterNotificationService(applicationContext)
-        View.OnClickListener()
+        binding.buttonNotification.setOnClickListener{
+            service.showNotification(Counter.value)
+        }
     }
 
 

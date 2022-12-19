@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/app_logo"
+        android:layout_width="309dp"
+        android:layout_height="303dp"
+        android:src="@drawable/ic_baseline_high_quality_24" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="360dp"
+        android:layout_height="309dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/app_logo"
+        android:text="Title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="360dp"
+        android:layout_height="309dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/app_logo"
+        android:text="This is message"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

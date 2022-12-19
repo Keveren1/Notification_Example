@@ -18,9 +18,17 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/Theme.NotificationExample.PopupOverlay" />
 
+        <Button
+            android:id="@+id/buttonNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Få notifikation"/>
+
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -30,5 +38,24 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
         app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device reistration token"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="start|center" />
+
+    <EditText
+        android:id="@+id/etToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:text="Name"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="end|center" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
